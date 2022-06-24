@@ -8,7 +8,20 @@ public class SecondPage extends BasePage {
 
     @FindBy(xpath = "//div[@class='s-widget-container s-spacing-small s-widget-container-height-small celwidget slot=MAIN template=SEARCH_RESULTS widgetId=search-results_19']//div[@class='a-section aok-relative s-image-fixed-height']")
     public  WebElement thirdItem;
-
-    @FindBy(xpath = "//span[@id='submit.add-to-cart']")
+    @FindBy(xpath = "//input[@id='add-to-cart-button']")
     public WebElement addToCart;
+    @FindBy(xpath = "//button[@class=' a-button-close a-declarative']")
+    public WebElement closeButton;
+    @FindBy(xpath = "//span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']")
+    public WebElement addedToCart;
+    @FindBy(xpath = "//button [@class = ' a-button-close a-declarative']")
+    public WebElement RecPopClose;
+    @FindBy(xpath = "//span [@id ='attachSiNoCoverage-announce']")
+    public WebElement NoThanks;
+
+
+    //span [@id ='attachSiNoCoverage-announce']
+
+
+
 }
