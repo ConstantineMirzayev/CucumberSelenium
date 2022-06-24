@@ -2,8 +2,6 @@ package StepsDefenitions.com.amazon;
 import Pages.com.amazon.SecondPage;
 import io.cucumber.java.en.And;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 
 public class SecondPageSteps {
     SecondPage SecondPage = new SecondPage();
@@ -16,13 +14,15 @@ public class SecondPageSteps {
     public void item_would_be_available_for_addToCard(String str){
         SecondPage.addToCart.click();
         try {
-            SecondPage.closeButton.click();
             SecondPage.RecPopClose.click();
-            SecondPage.NoThanks.click();
         } catch (Exception e) {
-            System.out.println("Emotional Damage.");
+            System.out.println("Try Catch for Recommend pop Message");
         }
-
+        try {
+            SecondPage.Add.click();
+        } catch (Exception e) {
+            System.out.println("Try Catch for Adding Insurance plan");
+        }
         Assert.assertEquals(str, SecondPage.addedToCart.getText());
     }
  }
