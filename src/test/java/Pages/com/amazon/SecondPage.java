@@ -13,4 +13,5 @@ public class SecondPage extends BasePage {
     public WebElement RecPopClose;
     @FindBy(xpath = "//span[@id='attachSiNoCoverage']//input[@type='submit']")
     public WebElement Add;
+    //Something New
 }
